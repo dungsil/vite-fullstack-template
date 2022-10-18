@@ -1,0 +1,34 @@
+{
+  "name": "im4node",
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev:web": "vite",
+    "dev:api": "nodemon --exec ts-node-esm --watch ./src/server/**/*.ts ./src/server/index.ts",
+    "dev": "run-p -s dev:*",
+
+    "lint": "eslint --ext .ts --ignore-path .gitignore .",
+    "lintfix": "pnpm lint --fix"
+  },
+  "dependencies": {
+    "h3": "^0.8.2",
+    "listhen": "^0.3.4",
+    "vue": "^3.2.41"
+  },
+  "devDependencies": {
+    "@dungsil/prettier-config": "^1.2.1",
+    "@types/node": "^18.11.0",
+    "@vitejs/plugin-vue": "^3.1.2",
+    "eslint": "^8.25.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "nodemon": "^2.0.20",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^2.7.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.8.4",
+    "unocss": "^0.45.29",
+    "vite": "^3.1.8"
+  }
+}
